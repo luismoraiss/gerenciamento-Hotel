@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+.barra-lateral {
+    border: 1px solid black;
+    height: 100vh;
+    width: 100px;
+    background-color: #7c2424;
+    
+}
+
+.container a {
+    display: block;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+span {
+    display: none;
+}
+
+@keyframes up {
+    100% {
+        width: 170px;
+    }
+}
+
+.linha.active{
+    animation: up 1s;
+}

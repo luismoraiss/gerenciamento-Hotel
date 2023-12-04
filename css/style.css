@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+:root{
+
+    --vinho:#660000;
+    --bordo:#7C2424;
+    --bege:#D2AE6D;
+    --branco:#FFF;
+    --black:#000;
+
+}
+.title{
+    max-height: 280px;
+    min-height: 0px;
+    background-color: var(--bordo);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.logo{
+    max-width: 195px;
+    min-width: 0px;
+    max-height: 180px;
+    min-height: 0px;
+}
+.title{
+    display: flex;
+}
+.titulo{
+    max-width: 460px;
+
+    color: var(--bege);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+}
+.conta{
+    text-decoration: none;
+    max-width: 350px;
+    min-width: 250px;
+    max-height: 85px;
+    min-height: 50px;
+    background-color: var(--branco);
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 1000;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    gap: 20px;
+}
+.pessoaConta{
+    width: 50px;
+    height: 30px;
+}
+
+/* MENU */
+body{
+    background-color: var(--vinho);
+}
+.menu{
+    margin: 0px auto;
+}
+
+.card {
+    min-height: 80vh; /* viewpoint height = Visualização da altura da janela*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card ul {
+    background-color: var(--bordo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    border-radius: 75px;
+    gap:32px;
+
+    height: 488px;
+    width: 412px;
+}
+
+.card ul li {
+    background-color: var(--bege);
+    width: 245px;
+    height: 47px;
+    border-radius: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
+}
+.menu-links{
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
