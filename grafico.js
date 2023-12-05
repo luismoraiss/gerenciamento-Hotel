@@ -1,6 +1,12 @@
-const container = document.getElementById('barra-lateral')
-const barraLateral = document.getElementById('linha')
+let btn = document.querySelector('#btn');
+let sidebar = document.querySelector('.sidebar');
+let srcBtn = document.querySelector('.bx-search');
 
-barraLateral.addEventListener('click', function(){
-    barra-lateral.classList.add('active')
-})
+btn.onclick = function(){
+    sidebar.classList.toggle('active');
+}
+srcBtn.onclick = function(){
+    sidebar.classList.toggle('active');
+}
+
+// CÓDIGO BARRA LATAERAL!!

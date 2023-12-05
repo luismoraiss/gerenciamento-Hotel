@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Hello Code</title>
     <link rel="stylesheet" href="../css/grafico.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="barra-lateral">
-            <div class="icons">
-                <a href="#" class="linha"><i class="fa-solid fa-bars"></i></a>
-                <a href="#"><i class="fa-solid fa-house"></i></a>
-                <span>Início</span>
-                <a href="#"><i class="fa-solid fa-envelope"></i></a>
-                <span>Email</span>
-                <a href="#"><i class="fa-solid fa-bed"></i></a>
-                <span>Acomodação</span>
-                <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
-                <span>Reservas</span>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                <span>Consumidos</span>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="../img/LOGO.svg" alt="">
+                <div class="logo_name">Quinta do Ypuã</div>
             </div>
-
+            <i class='bx bx-menu' id='btn'></i>
         </div>
 
+        <div class="src">
+            <i class='bx bx-search' ></i>
+            <input type="text" placeholder="Search..">
+        </div>
 
+        <ul class="nav">
+            <li>
+                <a href="../index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="link_name">Início</span>
+                </a>
+                <span class="tooltip">Início</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="link_name">Email</span>
+                </a>
+                <span class="tooltip">Email</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-bed"></i>
+                    <span class="link_name">Acomodação</span>
+                </a>
+                <span class="tooltip">Acomodação</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="link_name">Reservas</span>
+                </a>
+                <span class="tooltip">Reservas</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="link_name">Consumidos</span>
+                </a>
+                <span class="tooltip">Consumidos</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="link_name">Painel</span>
+                </a>
+                <span class="tooltip">Painel</span>
+            </li>
+        </ul>
     </div>
-</body>
 
+    <div class="home_content">
+        <div class="text">Painel</div>
+    </div>
+
+    <main>
+        
+    </main>
+
+
+
+
+
+
+
+   <script src="../grafico.js"></script>
+</body>
 </html>
