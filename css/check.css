@@ -28,10 +28,14 @@ body {
 
 .container{
     display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+   align-items: center;
 }
 #col{
     flex: 1;
-    
+  
     
 }
 
@@ -227,7 +231,7 @@ img {
     top: 50%;
 }
 
-.home_content {
+/* .check-in {
     width: 100vw;
     height: 10px;
     left: 80px;
@@ -238,7 +242,7 @@ img {
     border-radius: 20px;
 }
 
-.home_content .text {
+.check-in .text {
     font-size: 30px;
     font-weight: 500;
     color: #242424;
@@ -246,20 +250,15 @@ img {
 
 }
 
-.sidebar.active~.home_content {
+.sidebar.active~.check-in {
     left: 300px;
-} 
+}  */
 
-/* FIM BARRA LATERAL */
-
-/* Começo main */
-
-
-.home_content {
-    height: 10px;
-    width: 99%;
-    border: 1px solid black;
-    z-index:99; 
+.container .check-in{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
 }
-
-

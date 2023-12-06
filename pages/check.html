@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="../css/check.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- sidebar (inicio) -->
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <img src="./img/LOGO.svg" alt="">
+                    <div class="logo_name">Quinta do Ypuã</div>
+                </div>
+                <i class='bx bx-menu' id='btn'></i>
+            </div>
+
+            <div class="src">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search..">
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="./pages/login.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="link_name">Início</span>
+                    </a>
+                    <span class="tooltip">Início</span>
+                </li>
+                <li>
+                    <a href="./pages/check.html">
+                        <i class="fa-solid fa-hotel"></i>
+                        <span class="link_name">Check-in</span>
+                    </a>
+                    <span class="tooltip">Check-in</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bed"></i>
+                        <span class="link_name">Acomodação</span>
+                    </a>
+                    <span class="tooltip">Acomodação</span>
+                </li>
+                <li>
+                    <a href="./pages/reservas.html">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="link_name">Reservas</span>
+                    </a>
+                    <span class="tooltip">Reservas</span>
+                </li>
+
+                <li>
+                    <a href="./pages/graficoOcupacao.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="link_name">Painel</span>
+                    </a>
+                    <span class="tooltip">Painel</span>
+                </li>
+            </ul>
+
+            <!-- sidebar(fim) -->
+
+
+        </div>
+
+        <div class="check-in">
+            <h1>Check-in</h1>
+
+            <form>
+                <div class="informacoes">
+                    <label for="">Nome: </label>
+                    <input type="text" placeholder=" Digite seu Nome" pattern="[a-zA-Z\s]+">
+                    <label for="number">CPF: </label>
+                    <input type="number" name="cpf" id="cpf">
+                    <label for="">Data de Entrada: </label>
+                    <input type="date">
+                    <label for="">Data de Saída: </label>
+                    <input type="date">
+                    <label for="quartos">Hospedagens:</label>
+                    <input list="quartos" id="hospedagens">
+                    <datalist id="quartos">
+                        <option value="Suíte com cozinha">
+                        <option value="Chalé Família">
+                        <option value="Cabana">
+                        <option value="Bus">
+                        <option value="Estacionamento para overlands">
+                    </datalist>
+
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="../app.js"></script>
+
+
+</body>
+
+</html>
