@@ -321,3 +321,7 @@ flex-direction: column;
     background-color: #ffffff;
     color: #7C2424;
 }
+#reservar:hover{
+    background-color: whitesmoke;
+    font-weight: 600;
+}
