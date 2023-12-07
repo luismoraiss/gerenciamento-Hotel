@@ -5,25 +5,31 @@ new Chart(ctx, {
     data: {
         labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Total Reservas',
             data: [205, 130, 145, 117, 183, 220],
             borderWidth: 1,
 
 
         }, {
-            label: 'faturamento',
+            label: 'Faturamento',
             data: [12253, 10495, 14739, 9184, 11596, 13831],
             borderWidth: 1
         }, {
            
-            label: 'Hospedagens',
-            data: [1, 2, 45, 7, 92, 2],
+            label: 'Total P',
+            data: [345, 210,196,150,248,562 ],
             borderWidth: 1,
         }]
     },
     options: {
         backgroundColor: '#7c2424',
-
+       scales:{
+        xAxes:[{
+            gridLines:{
+            display: false
+            }
+        }]
+       }
 
 
     }
