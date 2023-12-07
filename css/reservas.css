@@ -14,7 +14,6 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    border-radius: 10%;
 }
 .tituloAcomodacao{
     height: 70px;
@@ -22,13 +21,10 @@
     background-color: var(--bordo) ;
     color: var(--bege);
     display: flex;
-    font-weight: 600;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
+    border-radius: 3px;
 }
 
 .acomodacoes{
@@ -45,83 +41,11 @@
 }
 
 .hospedar{
-    width: 40%;
-    height: 25px;
+    width: 3cm;
     margin-bottom: 20px;
     border-radius: 0.8rem;
     background-color: var(--bordo);
     color: var(--bege);
-    
-}
-.content-acomodacao{
-  width: 100%;
-  height: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-}
-.hospede-info {
-  margin-bottom: 7%;
-  margin-left: 10%;
-  color: var(--bege);
-
-}
-.data-info{
-  margin-left: 10%;
-  margin-top: 5%;
-  margin-bottom: 7%;
-  color: var(--bege);
-
-}
-.pessoa-hospede-info{
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  height: 50%;
-  width: 15%;
-}
-.linha-separacao{
-  background-color: var(--bege);
-  border: transparent;
-  height: 0.2%;
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-.info-acomodacao{
-  height: 10%;
-  width: 100%;
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fa-solid-fa-spinner-icon{
-  margin-right: 5%;
-}
-
-.info-acomodacao a{
-  text-decoration: none;
-  color: black;
-  margin-right: 5%;
- 
-}
-.content-acomodacao span i{
-  width: 100%;
-
-}
-.acomodacao-info{
-  margin-left: 3%;
-}
-
-#icons-ocupado{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8%;
-
 }
 
 
@@ -145,39 +69,3 @@
   }
 
   
-/* MODAL */
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-}
-
-.modal-conteudo {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.modal-fechar {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.modal-fechar:hover,
-.modal-fechar:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}

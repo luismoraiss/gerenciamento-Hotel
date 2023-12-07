@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/grafico.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <div class="sidebar">
             <div class="logo_content">
                 <div class="logo">
-                    <img src="./img/LOGO.svg" alt="">
+                    <img src="../img/LOGO.svg" alt="">
                     <div class="logo_name">Quinta do Ypuã</div>
                 </div>
                 <i class='bx bx-menu' id='btn'></i>
@@ -31,7 +32,7 @@
 
             <ul class="nav">
                 <li>
-                    <a href="./login.html">
+                    <a href="../index.html">
                         <i class="fa-solid fa-house"></i>
                         <span class="link_name">Início</span>
                     </a>
@@ -44,13 +45,7 @@
                     </a>
                     <span class="tooltip">Check-in</span>
                 </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-bed"></i>
-                        <span class="link_name">Acomodação</span>
-                    </a>
-                    <span class="tooltip">Acomodação</span>
-                </li>
+         
                 <li>
                     <a href="./reservas.html">
                         <i class="fa-solid fa-calendar-days"></i>
@@ -75,31 +70,45 @@
 
         <div class="home_content">
             <div class="text">Painel</div>
-       
+
 
             <div class="info">
                 <div class="info1">
-                 <p class="titulo">Total Reservas</p>
-                  <p class="subtitulo">345</p>
-                  <i class="icon" class="fa-solid fa-calendar-days"></i>
+                    <p class="titulo">Total Reservas</p>
+                    <p class="subtitulo">1023</p>
+                    
 
                 </div>
-                <div class="info2"></div>
-                <div class="info3"></div>
+
+                <div class="info2">
+                    <p class="titulo">Faturamento</p>
+                    <p class="subtitulo">R$70.000</p>
+
+                </div>
+
+                <div class="info3">
+
+                    <p class="titulo">Total Reservas</p>
+                    <p class="subtitulo">345</p>
+                    
+                </div>
             </div>
+            
             <div class="grafico">
 
-
+                <div>
+                    <canvas id="myChart" style="height: 100%; width: 100%;"></canvas>
+                  </div>
 
 
             </div>
-
+    
         </div>
 
-    
+      
 
-
-    <script src="../app.js"></script>
+        <script src="../app.js"></script>
+        <script src="../js/grafico.js"></script>
 
 </body>
 

@@ -46,13 +46,6 @@
                     <span class="tooltip">Check-in</span>
                 </li>
                 <li>
-                    <a href="">
-                        <i class="fa-solid fa-bed"></i>
-                        <span class="link_name">Acomodação</span>
-                    </a>
-                    <span class="tooltip">Acomodação</span>
-                </li>
-                <li>
                     <a href="./reservas.html">
                         <i class="fa-solid fa-calendar-days"></i>
                         <span class="link_name">Reservas</span>
@@ -79,37 +72,36 @@
 
             <form>
                 <div class="informacoes">
-                    <label for="">Nome: </label>
-                    <input type="text" placeholder=" Digite seu Nome" pattern="[a-zA-Z\s]+">
-                    <label for="number">CPF: </label>
-                    <input type="number" name="cpf" id="cpf">
-                    <label for="">Data de Entrada: </label>
-                    <input type="date">
-                    <label for="">Data de Saída: </label>
-                    <input type="date">
-                    <label for="quartos">Hospedagens:</label>
-                    <input list="quartos" id="hospedagens">
-                    <datalist id="quartos">
+                    <input type="text" placeholder="Nome" pattern="[a-zA-Z\s]+" class="input">
+                    
+                    <input type="text" placeholder="CPF" class="input">
+                  
+                    <input type="date" class="input">
+                  
+                    <input type="date"class="input">
+                 
+                    <input list="quartos" id="hospedagens" class="input">
+                    <datalist id="quartos" placeholder="Hospedagem">
                         <option value="Suíte com cozinha  R$10">
                         <option value="Chalé Família">
                         <option value="Cabana">
                         <option value="Bus">
                         <option value="Estacionamento para overlands">
                     </datalist>
-
-                    <label for="pagamento">Forma de Pagamento:</label>
-                    <input list="pagamento">
+                    <input list="pagamento" class="input">
                     <datalist id="pagamento">
                         <option value="Cartão de Crédito">
                         <option value="Cartão de Débito">
-                        <option value="Cabana">
-                        <option value="Bus">
-                        <option value="Estacionamento para overlands">
+                        <option value="Pix">
+                        <option value="Dinheiro">
                     </datalist>
 
                 </div>
             </form>
-            <div class="cor"></div>
+            <div class="cor">
+                <h2>Finalize o check-in</h2>
+                <button id="reservar">Reservar</button>
+            </div>
         </div>
 
 
